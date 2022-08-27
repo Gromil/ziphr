@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework'
+    'rest_framework',
+    'airlines'
 ]
 
 MIDDLEWARE = [
@@ -80,8 +81,6 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {'default': env.db()}
-
-CACHES = {'default': env.cache()}
 
 
 # Password validation
